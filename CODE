@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class LabProgram {
+   
+   /* Define your method here */
+   public static void swapValues(int[] values) {
+      int temp = values[0];
+      values[0] = values[1];
+      values[1] = temp;
+   }
+   
+   public static void main(String[] args) {
+      /* Type your code here. */
+      Scanner in = new Scanner(System.in);
+      int arr[] = new int[2];
+      arr[0] = in.nextInt();
+      arr[1] = in.nextInt();
+      swapValues(arr);
+      System.out.println(arr[0] + " " + arr[1]);
+   }
+}
